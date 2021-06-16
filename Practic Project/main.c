@@ -13,11 +13,11 @@
 #include <Windows.h>
 #define SizeMonth 12
 
-// Âűâîä äí˙
+// Вывод дня
 void print_day();
-// Âűâîä ěĺń˙öŕ
+// Вывод месяца
 void print_month(int day);
-// Âűâîä ďđĺäóďđĺćäĺíč˙ îá îřčáęĺ
+// Вывод предупреждения об ошибке
 void print_error();
 
 int main(void)
