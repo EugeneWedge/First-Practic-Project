@@ -1,17 +1,16 @@
+
 /*
 Файл: Practic Project.c
-Летняя практика
+Практика
 Автор : Комарницький Є.О.
 Задание: Разработать программу перевода даты та месяца в словесную форму
 Дата создания : 09.06.2021
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <locale.h>
-#include <windows.h>
-
+#include <Windows.h>
 #define SizeMonth 12
 
 // Вывод дня
@@ -33,18 +32,11 @@ int main(void)
         printf("Виберіть операцію (w/q): ");
         N = _getch();
         printf("\n");
-        switch (N)
-        {
-        case 'ц': case 'Ц': case 87: case 119: {
+        switch (N){
+        case 'ц': case 'Ц': case 87: case 119:{
             printf("Введіть день та місяць: ");
             scanf_s("%d%d", &day, &month);
-            if (day <= number_day[month - 1][0] && day >= 1 && month <= 12 && month >= 1) {
-                print_day(day);
-                print_month(month);
-            }
-            else {
-                print_error();
-            }
+            (day <= number_day[month - 1][0] && day >= 1 && month <= 12 && month >= 1) ? print_day(day), print_month(month) : print_error();
             break;
         }
         case 'Й': case 'й': case 113: case 81: printf("Робота програми завершена!\n");  return 0;
@@ -53,11 +45,8 @@ int main(void)
     }
 }
 
-
-void print_day(int day)
-{
-    switch (day)
-    {
+void print_day(int day){
+    switch (day){
     case 1: printf("перше "); break;
     case 2: printf("друге "); break;
     case 3: printf("третє "); break;
@@ -92,16 +81,14 @@ void print_day(int day)
     default: printf("(~) Виникла проблема!"); break;
     }
 }
-void print_month(int month)
-{
-    switch (month)
-    {
+void print_month(int month){
+    switch (month){
     case 1: printf("січня\n"); break;
     case 2: printf("лютого\n"); break;
     case 3: printf("березня\n"); break;
     case 4: printf("квітня\n"); break;
     case 5: printf("травня\n"); break;
-    case 6: printf("червня\m"); break;
+    case 6: printf("червня\n"); break;
     case 7: printf("липня\n"); break;
     case 8: printf("серпня\n"); break;
     case 9: printf("вересня\n"); break;
@@ -111,8 +98,6 @@ void print_month(int month)
     default: printf("(~) Виникла проблема!\n"); break;
     }
 }
-
-
 void print_error() {
     printf("========================================\n");
     printf("(~) Введена дата чи місяць невірний!\n");
