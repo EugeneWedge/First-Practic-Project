@@ -1,9 +1,9 @@
 /*
-Файл: Practic Project.c
-Летняя практика
-Автор : Комарницький Є.О.
-Задание: Разработать программу перевода даты та месяца в словесную форму
-Дата создания : 09.06.2021
+Г”Е•Г©Г«: Practic Project.c
+Г‹ДєЕ€Г­Л™Л™ ДЏД‘Е•Д™Е€ДЌД™Е•
+Е”ГўЕ€Г®Д‘ : ДГ®Д›Е•Д‘Г­ДЌГ¶ГјД™ДЌГ© Ећ.ГЋ.
+Г‡Е•Г¤Е•Г­ДЌДє: ДђЕ•Г§Д‘Е•ГЎГ®Е€Е•Е€Гј ДЏД‘Г®ДѓД‘Е•Д›Д›Гі ДЏДєД‘ДєГўГ®Г¤Е• Г¤Е•Е€Е± Е€Е• Д›ДєЕ„Л™Г¶Е• Гў Е„Г«Г®ГўДєЕ„Г­ГіЕЈ ГґГ®Д‘Д›Гі
+Г„Е•Е€Е• Е„Г®Г§Г¤Е•Г­ДЌЛ™ : 09.06.2021
 */
 
 #include <stdio.h>
@@ -14,11 +14,11 @@
 
 #define SizeMonth 12
 
-// Вывод дня
+// Г‚Е±ГўГ®Г¤ Г¤Г­Л™
 void print_day();
-// Вывод месяца
+// Г‚Е±ГўГ®Г¤ Д›ДєЕ„Л™Г¶Е•
 void print_month(int day);
-// Вывод предупреждения об ошибке
+// Г‚Е±ГўГ®Г¤ ДЏД‘ДєГ¤ГіДЏД‘ДєД‡Г¤ДєГ­ДЌЛ™ Г®ГЎ Г®Е™ДЌГЎД™Дє
 void print_error();
 
 int main(void)
@@ -30,13 +30,13 @@ int main(void)
     int day = 0, month = 0;
     char N;
     for (;;) {
-        printf("Виберіть операцію (w/q): ");
+        printf("Г‚ДЌГЎДєД‘Е‚Е€Гј Г®ДЏДєД‘Е•Г¶Е‚ЕЈ (w/q): ");
         N = _getch();
         printf("\n");
         switch (N)
         {
-        case 'ц': case 'Ц': case 87: case 119: {
-            printf("Введіть день та місяць: ");
+        case 'Г¶': case 'Г–': case 87: case 119: {
+            printf("Г‚ГўДєГ¤Е‚Е€Гј Г¤ДєГ­Гј Е€Е• Д›Е‚Е„Л™Г¶Гј: ");
             scanf_s("%d%d", &day, &month);
             if (day <= number_day[month - 1][0] && day >= 1 && month <= 12 && month >= 1) {
                 print_day(day);
@@ -47,8 +47,8 @@ int main(void)
             }
             break;
         }
-        case 'Й': case 'й': case 113: case 81: printf("Робота програми завершена!\n");  return 0;
-        default: printf("(~) Введенна команда невірна!\n"); break;
+        case 'Г‰': case 'Г©': case 113: case 81: printf("ДђГ®ГЎГ®Е€Е• ДЏД‘Г®ДѓД‘Е•Д›ДЌ Г§Е•ГўДєД‘Е™ДєГ­Е•!\n");  return 0;
+        default: printf("(~) Г‚ГўДєГ¤ДєГ­Г­Е• Д™Г®Д›Е•Г­Г¤Е• Г­ДєГўЕ‚Д‘Г­Е•!\n"); break;
         }
     }
 }
@@ -58,67 +58,67 @@ void print_day(int day)
 {
     switch (day)
     {
-    case 1: printf("перше "); break;
-    case 2: printf("друге "); break;
-    case 3: printf("третє "); break;
-    case 4: printf("четверте "); break;
-    case 5: printf("п'яте "); break;
-    case 6: printf("шосте "); break;
-    case 7: printf("сьоме "); break;
-    case 8: printf("восьме "); break;
-    case 9: printf("дев'яте "); break;
-    case 10: printf("десяте "); break;
-    case 11: printf("одинадцяте "); break;
-    case 12: printf("дванадцяте "); break;
-    case 13: printf("тринадцяте "); break;
-    case 14: printf("чотирнадцяте "); break;
-    case 15: printf("п'ятнацяте "); break;
-    case 16: printf("шостнадцяте "); break;
-    case 17: printf("сімнадцяте "); break;
-    case 18: printf("вісімнадцяте "); break;
-    case 19: printf("дев'ятнадцяте "); break;
-    case 20: printf("двадцяте "); break;
-    case 21: printf("двадцять перше "); break;
-    case 22: printf("двадцять друге "); break;
-    case 23: printf("двадцять третє "); break;
-    case 24: printf("двадцять четверте "); break;
-    case 25: printf("двадцять п'яте "); break;
-    case 26: printf("двадцять шосте "); break;
-    case 27: printf("двадцять сьоме "); break;
-    case 28: printf("двадцять восьме "); break;
-    case 29: printf("двадцять дев'яте "); break;
-    case 30: printf("тридцяте "); break;
-    case 31: printf("тридцять перше "); break;
-    default: printf("(~) Виникла проблема!"); break;
+    case 1: printf("ДЏДєД‘Е™Дє "); break;
+    case 2: printf("Г¤Д‘ГіДѓДє "); break;
+    case 3: printf("Е€Д‘ДєЕ€Еџ "); break;
+    case 4: printf("Г·ДєЕ€ГўДєД‘Е€Дє "); break;
+    case 5: printf("ДЏ'Л™Е€Дє "); break;
+    case 6: printf("Е™Г®Е„Е€Дє "); break;
+    case 7: printf("Е„ГјГ®Д›Дє "); break;
+    case 8: printf("ГўГ®Е„ГјД›Дє "); break;
+    case 9: printf("Г¤ДєГў'Л™Е€Дє "); break;
+    case 10: printf("Г¤ДєЕ„Л™Е€Дє "); break;
+    case 11: printf("Г®Г¤ДЌГ­Е•Г¤Г¶Л™Е€Дє "); break;
+    case 12: printf("Г¤ГўЕ•Г­Е•Г¤Г¶Л™Е€Дє "); break;
+    case 13: printf("Е€Д‘ДЌГ­Е•Г¤Г¶Л™Е€Дє "); break;
+    case 14: printf("Г·Г®Е€ДЌД‘Г­Е•Г¤Г¶Л™Е€Дє "); break;
+    case 15: printf("ДЏ'Л™Е€Г­Е•Г¶Л™Е€Дє "); break;
+    case 16: printf("Е™Г®Е„Е€Г­Е•Г¤Г¶Л™Е€Дє "); break;
+    case 17: printf("Е„Е‚Д›Г­Е•Г¤Г¶Л™Е€Дє "); break;
+    case 18: printf("ГўЕ‚Е„Е‚Д›Г­Е•Г¤Г¶Л™Е€Дє "); break;
+    case 19: printf("Г¤ДєГў'Л™Е€Г­Е•Г¤Г¶Л™Е€Дє "); break;
+    case 20: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Дє "); break;
+    case 21: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј ДЏДєД‘Е™Дє "); break;
+    case 22: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Г¤Д‘ГіДѓДє "); break;
+    case 23: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Е€Д‘ДєЕ€Еџ "); break;
+    case 24: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Г·ДєЕ€ГўДєД‘Е€Дє "); break;
+    case 25: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј ДЏ'Л™Е€Дє "); break;
+    case 26: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Е™Г®Е„Е€Дє "); break;
+    case 27: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Е„ГјГ®Д›Дє "); break;
+    case 28: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј ГўГ®Е„ГјД›Дє "); break;
+    case 29: printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Г¤ДєГў'Л™Е€Дє "); break;
+    case 30: printf("Е€Д‘ДЌГ¤Г¶Л™Е€Дє "); break;
+    case 31: printf("Е€Д‘ДЌГ¤Г¶Л™Е€Гј ДЏДєД‘Е™Дє "); break;
+    default: printf("(~) Г‚ДЌГ­ДЌД™Г«Е• ДЏД‘Г®ГЎГ«ДєД›Е•!"); break;
     }
 }
 void print_month(int month)
 {
     switch (month)
     {
-    case 1: printf("січня\n"); break;
-    case 2: printf("лютого\n"); break;
-    case 3: printf("березня\n"); break;
-    case 4: printf("квітня\n"); break;
-    case 5: printf("травня\n"); break;
-    case 6: printf("червня\m"); break;
-    case 7: printf("липня\n"); break;
-    case 8: printf("серпня\n"); break;
-    case 9: printf("вересня\n"); break;
-    case 10: printf("жовтня\n"); break;
-    case 11: printf("листопада\n"); break;
-    case 12: printf("грудня\n"); break;
-    default: printf("(~) Виникла проблема!\n"); break;
+    case 1: printf("Е„Е‚Г·Г­Л™\n"); break;
+    case 2: printf("Г«ЕЈЕ€Г®ДѓГ®\n"); break;
+    case 3: printf("ГЎДєД‘ДєГ§Г­Л™\n"); break;
+    case 4: printf("Д™ГўЕ‚Е€Г­Л™\n"); break;
+    case 5: printf("Е€Д‘Е•ГўГ­Л™\n"); break;
+    case 6: printf("Г·ДєД‘ГўГ­Л™\n"); break;
+    case 7: printf("Г«ДЌДЏГ­Л™\n"); break;
+    case 8: printf("Е„ДєД‘ДЏГ­Л™\n"); break;
+    case 9: printf("ГўДєД‘ДєЕ„Г­Л™\n"); break;
+    case 10: printf("Д‡Г®ГўЕ€Г­Л™\n"); break;
+    case 11: printf("Г«ДЌЕ„Е€Г®ДЏЕ•Г¤Е•\n"); break;
+    case 12: printf("ДѓД‘ГіГ¤Г­Л™\n"); break;
+    default: printf("(~) Г‚ДЌГ­ДЌД™Г«Е• ДЏД‘Г®ГЎГ«ДєД›Е•!\n"); break;
     }
 }
 
 
 void print_error() {
     printf("========================================\n");
-    printf("(~) Введена дата чи місяць невірний!\n");
-    printf("(~) Приклад:\n");
-    printf("Введіть день та місяць: ");
+    printf("(~) Г‚ГўДєГ¤ДєГ­Е• Г¤Е•Е€Е• Г·ДЌ Д›Е‚Е„Л™Г¶Гј Г­ДєГўЕ‚Д‘Г­ДЌГ©!\n");
+    printf("(~) ДЋД‘ДЌД™Г«Е•Г¤:\n");
+    printf("Г‚ГўДєГ¤Е‚Е€Гј Г¤ДєГ­Гј Е€Е• Д›Е‚Е„Л™Г¶Гј: ");
     Sleep(1000); printf("1"); Sleep(1000); printf("3"); Sleep(1000); printf(" "); Sleep(1000); printf("0"); Sleep(1000); printf("8");
-    printf("\nтринадцяте серпня\n");
+    printf("\nЕ€Д‘ДЌГ­Е•Г¤Г¶Л™Е€Дє Е„ДєД‘ДЏГ­Л™\n");
     printf("========================================\n");
 }
