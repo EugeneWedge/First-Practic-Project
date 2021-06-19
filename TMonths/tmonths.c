@@ -1,64 +1,64 @@
 #include "tmonths.h"
 #include <Windows.h>
-void print_day(int day) {
+int print_day(int day) {
     switch (day) {
-    case 1: printf("перше "); break;
-    case 2: printf("друге "); break;
-    case 3: printf("третє "); break;
-    case 4: printf("четверте "); break;
-    case 5: printf("п'яте "); break;
-    case 6: printf("шосте "); break;
-    case 7: printf("сьоме "); break;
-    case 8: printf("восьме "); break;
-    case 9: printf("дев'яте "); break;
-    case 10: printf("десяте "); break;
-    case 11: printf("одинадцяте "); break;
-    case 12: printf("дванадцяте "); break;
-    case 13: printf("тринадцяте "); break;
-    case 14: printf("чотирнадцяте "); break;
-    case 15: printf("п'ятнацяте "); break;
-    case 16: printf("шостнадцяте "); break;
-    case 17: printf("сімнадцяте "); break;
-    case 18: printf("вісімнадцяте "); break;
-    case 19: printf("дев'ятнадцяте "); break;
-    case 20: printf("двадцяте "); break;
-    case 21: printf("двадцять перше "); break;
-    case 22: printf("двадцять друге "); break;
-    case 23: printf("двадцять третє "); break;
-    case 24: printf("двадцять четверте "); break;
-    case 25: printf("двадцять п'яте "); break;
-    case 26: printf("двадцять шосте "); break;
-    case 27: printf("двадцять сьоме "); break;
-    case 28: printf("двадцять восьме "); break;
-    case 29: printf("двадцять дев'яте "); break;
-    case 30: printf("тридцяте "); break;
-    case 31: printf("тридцять перше "); break;
-    default: printf("(~) Виникла проблема!"); break;
+    case 1: printf("РїРµСЂС€Рµ "); return 0; break;
+    case 2: printf("РґСЂСѓРіРµ "); return 0; break;
+    case 3: printf("С‚СЂРµС‚С” "); return 0; break;
+    case 4: printf("С‡РµС‚РІРµСЂС‚Рµ "); return 0; break;
+    case 5: printf("Рї'СЏС‚Рµ "); return 0; break;
+    case 6: printf("С€РѕСЃС‚Рµ "); return 0; break;
+    case 7: printf("СЃСЊРѕРјРµ "); return 0; break;
+    case 8: printf("РІРѕСЃСЊРјРµ "); return 0; break;
+    case 9: printf("РґРµРІ'СЏС‚Рµ "); return 0; break;
+    case 10: printf("РґРµСЃСЏС‚Рµ "); return 0; break;
+    case 11: printf("РѕРґРёРЅР°РґС†СЏС‚Рµ "); return 0; break;
+    case 12: printf("РґРІР°РЅР°РґС†СЏС‚Рµ "); return 0; break;
+    case 13: printf("С‚СЂРёРЅР°РґС†СЏС‚Рµ "); return 0; break;
+    case 14: printf("С‡РѕС‚РёСЂРЅР°РґС†СЏС‚Рµ "); return 0; break;
+    case 15: printf("Рї'СЏС‚РЅР°С†СЏС‚Рµ "); return 0; break;
+    case 16: printf("С€РѕСЃС‚РЅР°РґС†СЏС‚Рµ "); return 0; break;
+    case 17: printf("СЃС–РјРЅР°РґС†СЏС‚Рµ "); return 0; break;
+    case 18: printf("РІС–СЃС–РјРЅР°РґС†СЏС‚Рµ "); return 0; break;
+    case 19: printf("РґРµРІ'СЏС‚РЅР°РґС†СЏС‚Рµ "); return 0; break;
+    case 20: printf("РґРІР°РґС†СЏС‚Рµ "); return 0; break;
+    case 21: printf("РґРІР°РґС†СЏС‚СЊ РїРµСЂС€Рµ "); return 0; break;
+    case 22: printf("РґРІР°РґС†СЏС‚СЊ РґСЂСѓРіРµ "); return 0; break;
+    case 23: printf("РґРІР°РґС†СЏС‚СЊ С‚СЂРµС‚С” "); return 0; break;
+    case 24: printf("РґРІР°РґС†СЏС‚СЊ С‡РµС‚РІРµСЂС‚Рµ "); return 0; break;
+    case 25: printf("РґРІР°РґС†СЏС‚СЊ Рї'СЏС‚Рµ "); return 0; break;
+    case 26: printf("РґРІР°РґС†СЏС‚СЊ С€РѕСЃС‚Рµ "); return 0; break;
+    case 27: printf("РґРІР°РґС†СЏС‚СЊ СЃСЊРѕРјРµ "); return 0; break;
+    case 28: printf("РґРІР°РґС†СЏС‚СЊ РІРѕСЃСЊРјРµ "); return 0; break;
+    case 29: printf("РґРІР°РґС†СЏС‚СЊ РґРµРІ'СЏС‚Рµ "); return 0; break;
+    case 30: printf("С‚СЂРёРґС†СЏС‚Рµ "); return 0; break;
+    case 31: printf("С‚СЂРёРґС†СЏС‚СЊ РїРµСЂС€Рµ "); return 0; break;
+    default: printf("(~) Р’РёРЅРёРєР»Р° РїСЂРѕР±Р»РµРјР°!"); return 1; break;
     }
 }
-void print_month(int month) {
+int print_month(int month) {
     switch (month) {
-    case 1: printf("січня\n"); break;
-    case 2: printf("лютого\n"); break;
-    case 3: printf("березня\n"); break;
-    case 4: printf("квітня\n"); break;
-    case 5: printf("травня\n"); break;
-    case 6: printf("червня\n"); break;
-    case 7: printf("липня\n"); break;
-    case 8: printf("серпня\n"); break;
-    case 9: printf("вересня\n"); break;
-    case 10: printf("жовтня\n"); break;
-    case 11: printf("листопада\n"); break;
-    case 12: printf("грудня\n"); break;
-    default: printf("(~) Виникла проблема!\n"); break;
+    case 1: printf("СЃС–С‡РЅСЏ\n"); return 0; break;
+    case 2: printf("Р»СЋС‚РѕРіРѕ\n"); return 0; break;
+    case 3: printf("Р±РµСЂРµР·РЅСЏ\n"); return 0; break;
+    case 4: printf("РєРІС–С‚РЅСЏ\n"); return 0; break;
+    case 5: printf("С‚СЂР°РІРЅСЏ\n"); return 0; break;
+    case 6: printf("С‡РµСЂРІРЅСЏ\n"); return 0; break;
+    case 7: printf("Р»РёРїРЅСЏ\n"); return 0; break;
+    case 8: printf("СЃРµСЂРїРЅСЏ\n"); return 0; break;
+    case 9: printf("РІРµСЂРµСЃРЅСЏ\n"); return 0; break;
+    case 10: printf("Р¶РѕРІС‚РЅСЏ\n"); return 0; break;
+    case 11: printf("Р»РёСЃС‚РѕРїР°РґР°\n"); return 0; break;
+    case 12: printf("РіСЂСѓРґРЅСЏ\n"); return 0; break;
+    default: printf("(~) Р’РёРЅРёРєР»Р° РїСЂРѕР±Р»РµРјР°!\n"); return 1; break;
     }
 }
 void print_error() {
     printf("========================================\n");
-    printf("(~) Введена дата чи місяць невірний!\n");
-    printf("(~) Приклад:\n");
-    printf("Введіть день та місяць: ");
+    printf("(~) Р’РІРµРґРµРЅР° РґР°С‚Р° С‡Рё РјС–СЃСЏС†СЊ РЅРµРІС–СЂРЅРёР№!\n");
+    printf("(~) РџСЂРёРєР»Р°Рґ:\n");
+    printf("Р’РІРµРґС–С‚СЊ РґРµРЅСЊ С‚Р° РјС–СЃСЏС†СЊ: ");
     Sleep(1000); printf("1"); Sleep(1000); printf("3"); Sleep(1000); printf(" "); Sleep(1000); printf("0"); Sleep(1000); printf("8");
-    printf("\nтринадцяте серпня\n");
+    printf("\nС‚СЂРёРЅР°РґС†СЏС‚Рµ СЃРµСЂРїРЅСЏ\n");
     printf("========================================\n");
 }
