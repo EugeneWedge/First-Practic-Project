@@ -14,7 +14,7 @@
 #include "..\..\TMonths\tmonths.h"
 #define SizeMonth 12
 
-int main(void)
+int main()
 {
     int number_day[SizeMonth][1] = { {31},{29},{31},{30},{31},{30},{31},{31},{30},{31},{30},{31} };
     setlocale(LC_ALL, "Ukr");
