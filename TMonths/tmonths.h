@@ -3,4 +3,5 @@
 #endif // !TMONTHS.H
 int print_day(int day);
 int print_month(int month);
-void print_error();
+int convert_day(int day, char* days);
+int convert_month(int month, char* months);
